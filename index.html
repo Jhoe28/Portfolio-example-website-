@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio website for web programmers">
+    <title>Portfolio example website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b803c0f05f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo"><span class="logo">J</span>OSHUA.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services </a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi, I'm <span class="header-text">Joshua</span><br>Akintimehin from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img.JPG" class="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>
+                        tota eros elit has suscipiantur ornare dolorem commodo dapibus adhuc rutrum tacimates ultricies iaculis splendide a litora sapientem sem ultricies dignissim parturient ceteros gubergren convallis mi laoreet nonumes erat ac maiorum facilisis nec ridiculus iudicabit potenti nisi phasellus reprehendunt verterem reprimique utroque solum interpretaris eloquentiam offendit aliquam quot epicurei ponderum laoreet habitasse repudiare accumsan quaeque nostrum conceptam quot nonumes lacus vivendo patrioque erroribus melius adipisci pellentesque cras sonet tale dicunt atomorum eirmod ligula dictum primis accusata posidonium intellegebat labores molestiae.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web development</span><br>Web app development </li>
+                            <li><span>App Development</span><br>Building android/ios applications </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>UX/UI design training at IT institute </li>
+                            <li><span>2019 - 2021</span><br>Team lead at Stargate LLC </li>
+                            <li><span>2017 - 2019</span><br>UI/UX design executive at Coin Digital LTD </li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart e-commerce </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX design training at IT institute </li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore </li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <div class="subtitle">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>molestie eu pulvinar veritus turpis dolores molestie enim gloriatur movet deseruisse postea platonem delectus omittantur volumus quem cras ceteros graeci</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>molestie eu pulvinar veritus turpis dolores molestie enim gloriatur movet deseruisse postea platonem delectus omittantur volumus quem cras ceteros graeci</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App design</h2>
+                    <p>molestie eu pulvinar veritus turpis dolores molestie enim gloriatur movet deseruisse postea platonem delectus omittantur volumus quem cras ceteros graeci</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Screenshot_20241026-153954.png">
+                    <div class="layer">
+                        <h3>Subscription plans</h3>
+                        <p>usu nibh iisque consequat nonumy verear ius omittantur integer agam prompta quam idque equidem possit</p>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot_20241026-154617.png">
+                    <div class="layer">
+                        <h3>Lash technician website</h3>
+                        <p>A website that connects beautiful ladies to a lash technician who will make them more beautiful</p>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Screenshot_20241026-155242.png">
+                    <div class="layer">
+                        <h3>Food Example website</h3>
+                        <p>A website that help people place order for food and have it delivered to them</p>
+                        <a href="#"><i class="fa-solid fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="subtitle">Contact me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i>akintimehinjhoshua@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>07011940467</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/joshua.benjamin.52090008"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/qr/GK4ZS4VPRQXDE1"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/callmejhoe?igsh=MTJpdmFwdWV0ZjR1cg=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/joshua-akintimehin-557347313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="form-handler.php" method="post">
+                        <input type="name" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Joshua, Made with <i class="fas fa-heart"></i>by easy tutorial</p>
+        </div>
+    </div>
+  <script>
+      
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+      
+  </script>
+  
+  <script>
+      
+     var sidemenu =  document.getElementById("sidemenu");
+    
+     function closemenu() {
+         sidemenu.style.right = "-200px";
+     }
+       
+     function openmenu() {
+         sidemenu.style.right = "0";
+     }
+  </script>
+</body>
+</html>
